@@ -1,0 +1,146 @@
+
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  width: 419px;
+  height: 280px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.mywork-container img:hover {
+  transform: scale(1.2);
+  border: 4px solid #ff00ff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.mywork-showmore {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 30px 60px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.mywork-showmore:hover {
+  gap: 30px;
+  transition: 0.6s;
+}
+
+
+@media (max-width: 1024px) {
+  .mywork {
+    margin: 50px 50px;
+    gap: 60px;
+  }
+
+  .mywork-title h1 {
+    font-size: 60px;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .mywork-container img {
+    width: 350px;
+    height: 220px;
+  }
+
+  .mywork-showmore {
+    font-size: 20px;
+    padding: 25px 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mywork {
+    margin: 40px 20px;
+    gap: 50px;
+  }
+
+  .mywork-title h1 {
+    font-size: 50px;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mywork-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mywork-showmore {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mywork {
+    margin: 20px 10px;
+    gap: 40px;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px;
+  }
+
+  .mywork-container {
+    gap: 20px;
+  }
+
+  .mywork-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mywork-showmore {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}

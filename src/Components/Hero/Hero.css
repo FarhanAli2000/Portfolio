@@ -1,0 +1,117 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; /* Changed to rem for better scalability */
+    padding: 0 2rem; /* Add some padding for smaller screens */
+}
+.hero img {
+    border-radius: 5%;
+    margin-top: 5vh; /* Adjust based on viewport height */
+    max-width: 100%; /* Responsive image scaling */
+    height: auto;
+}
+.hero h1 {
+    text-align: center;
+    width: 90%; /* Reduce width on smaller screens */
+    font-size: 4rem; /* Use rem for scalable font size */
+    font-weight: 600;
+    margin-top: 5vh; /* Adjust to viewport height for responsiveness */
+}
+.hero h1 span {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p {
+    width: 80%; /* Adjust width for responsiveness */
+    text-align: center;
+    font-size: 1.5rem; /* Scalable font size */
+    line-height: 2rem;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Reduced gap for smaller screens */
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5vh;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.hero-connect,
+.hero-resume {
+    padding: 1.5rem 2rem; /* Adjusted padding */
+    border-radius: 50px;
+    cursor: pointer;
+}
+.hero-connect {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+}
+.hero-resume {
+    border: 2px solid #FFF;
+}
+.hero-connect:hover {
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+.hero-resume:hover {
+    border-color: #B415FF;
+    transform: scale(1.05);
+}
+.hero-connect a,
+.hero-resume a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3.5rem; /* Smaller font size for large tablets */
+    }
+    .hero p {
+        width: 70%; /* More flexible width */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        width: 90%;
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .hero img {
+        margin-top: 3vh; /* Less top margin */
+    }
+    .hero-action {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Reduced gap */
+    }
+    .hero-connect,
+    .hero-resume {
+        padding: 1rem 1.5rem; /* Smaller padding for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .hero-action {
+        gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .hero-connect,
+    .hero-resume {
+        padding: 0.75rem 1rem; /* Even smaller padding */
+    }
+}
