@@ -6,7 +6,6 @@
     gap: 40px;
     margin: 40px 10vw; 
 }
-
 .about-title h1{
     padding: 0px;
     font-size: 90px; 
@@ -38,13 +37,19 @@
     font-weight: 500;
 }
 
-.about-skills1, .about-skills2{
+/* .about-skills1, .about-skills2{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 100px; 
     flex-wrap: wrap; 
-}
+} */
 
+.box1{
+    display:flex;
+    flex-direction: row;
+   
+    justify-content:space-evenly;
+}
 .about-skill{
     display: flex;
     gap: 20px;
@@ -72,8 +77,18 @@
     width: 100%;
     justify-content: space-around;
     margin-bottom: 80px;
+    margin-top: 50px;
     flex-wrap: wrap; 
 }
+
+.about-para p {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 80px;
+}
+
 
 .about-achievement{
     display: flex;

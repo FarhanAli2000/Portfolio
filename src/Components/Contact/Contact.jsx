@@ -62,11 +62,11 @@ const Contact = () => {
             </div>
             <div className="linkedin-icon">
               <i className="fa-brands fa-linkedin"></i>
-              <p><a href="https://www.linkedin.com/in/syed-farhan-ali-806a8b230/">Linkedin</a></p>
+              <a href="https://www.linkedin.com/in/syed-farhan-ali-806a8b230/">Syed Farhan Ali</a>
             </div>
-            <div className="location-icon">
+            <div className="contact-detail">
               <img src={location_icon} alt="Location Icon" />
-              <p>Islamabad, Pakistan.</p>
+              <p> Islamabad, Pakistan</p>
             </div>
           </div>
         </div>

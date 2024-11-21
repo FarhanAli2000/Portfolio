@@ -131,6 +131,8 @@
   text-decoration: none;
   color: white;
   font-size: 25px;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 /* RESPONSIVE DESIGN */

@@ -7,13 +7,14 @@ const Hero = () => {
     <div id="home" className="hero">
       {/* <img src={profile_img} alt="" style={{ height: "5%", width: "10%" }} /> */}
       <h1>
-        <span>I am Syed Farhan Ali,</span> MERN STACK DEVELOPER based in
-        Pakistan.
-      </h1>
+        <span>I am Syed Farhan Ali,</span></h1><p>MERN STACK DEVELOPER based in  Pakistan.</p>
+       
+      
       <p>
         Hello there! I am a dedicated Frontend and MERN Stack Developer,
-        committed to turning innovative concepts into reality. Browse my
-        portfolio to see examples of my work and lets connect!
+        committed to turning innovative concepts into reality. 
+        {/* Browse my
+        portfolio to see examples of my work and lets connect! */}
       </p>
       <div className="hero-action">
         <div className="hero-connect">
